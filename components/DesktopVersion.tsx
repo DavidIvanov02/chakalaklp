@@ -15,11 +15,11 @@ export default function DesktopVersion({ timeLeft }: DesktopVersionProps) {
                 backgroundRepeat: "no-repeat"
             }}
         >
-            <div className="max-w-7xl mx-auto px-10 py-3">
-                <div className="grid grid-cols-12 gap-4 items-center">
-                    <div className="col-span-7">
+            <div className="max-w-7xl mx-auto px-8 py-6">
+                <div className="grid grid-cols-12 gap-8 items-center mb-8">
+                    <div className="col-span-6">
                         <div className="text-left">
-                            <div className="-ml-36">
+                            <div className="-mb-26 -ml-36">
                                 <Image
                                     src="/assets/Landing_PalmsBet_Kumbata_Title.png"
                                     alt="На чакалък за"
@@ -30,13 +30,13 @@ export default function DesktopVersion({ timeLeft }: DesktopVersionProps) {
                                 />
                             </div>
                             <div>
-                                <h2 className="text-5xl font-bold mb-1">СПЕЧЕЛИ PLAYSTATION 5!</h2>
+                                <h2 className="text-4xl font-bold mb-1">СПЕЧЕЛИ PLAYSTATION 5!</h2>
                                 <p className="text-xl mb-4">Участвай в теглението с три супер лесни стъпки!</p>
                             </div>
                         </div>
 
-                        <div className="space-y-2">
-                            <div className="flex items-start space-x-6 text-white">
+                        <div className="space-y-4">
+                            <div className="flex items-start space-x-4 text-white">
                                 <Image
                                     src="/assets/Landing_PalmsBet_Kumbata_Number1.png"
                                     alt="1"
@@ -44,12 +44,12 @@ export default function DesktopVersion({ timeLeft }: DesktopVersionProps) {
                                     height={32}
                                     className="flex-shrink-0 mt-1"
                                 />
-                                <div className="pt-2">
+                                <div className="pt-1">
                                     <p className="text-xl leading-relaxed">Регистрация в PalmsBet с <span className="font-bold cursor-pointer">линка ми</span></p>
                                 </div>
                             </div>
 
-                            <div className="flex items-start space-x-6 text-white">
+                            <div className="flex items-start space-x-4 text-white">
                                 <Image
                                     src="/assets/Landing_PalmsBet_Kumbata_Number2.png"
                                     alt="2"
@@ -57,27 +57,27 @@ export default function DesktopVersion({ timeLeft }: DesktopVersionProps) {
                                     height={32}
                                     className="flex-shrink-0 mt-1"
                                 />
-                                <div className="pt-2">
+                                <div className="pt-1">
                                     <p className="text-xl leading-relaxed">Активация на <span className="font-bold">стартовия пакет</span></p>
                                 </div>
                             </div>
 
-                            <div className="flex items-start space-x-6 text-white">
+                            <div className="flex items-start space-x-4 text-white">
                                 <Image
                                     src="/assets/Landing_PalmsBet_Kumbata_Number3.png"
                                     alt="3"
                                     width={32}
                                     height={32}
-                                    className="flex-shrink-0"
+                                    className="flex-shrink-0 mt-1"
                                 />
-                                <div className="pt-0">
+                                <div className="pt-1">
                                     <p className="text-xl leading-relaxed"><span className="font-bold">Готов си!</span> Тегля победителя</p>
                                     <p className="text-xl leading-relaxed">на лайв в Kick на 25.10.2025г.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="mt-4">
+                        <div className="mt-6">
                             <a
                                 href="https://www.palmsbet.com/affiliate/?marketingCode=PB-0087&banID=&brand=ecasino&ns=PS5&clickid=&pages=register"
                                 target="_blank"
@@ -94,21 +94,21 @@ export default function DesktopVersion({ timeLeft }: DesktopVersionProps) {
                         </div>
                     </div>
 
-                    <div className="col-span-5 flex justify-center">
+                    <div className="col-span-6 flex justify-center">
                         <div className="relative">
                             <Image
                                 src="/assets/Landing_PalmsBet_Kumbata_Baner1_v1.png"
                                 alt="PlayStation 5 с Кумбата"
-                                width={750}
-                                height={600}
+                                width={900}
+                                height={700}
                                 className="h-auto max-w-full"
                             />
                         </div>
                     </div>
                 </div>
 
-                <div className="text-center mt-4">
-                    <h2 className="text-white text-5xl font-bold mb-2">АКО НЕ СИ РАЗБРАЛ</h2>
+                <div className="text-center">
+                    <h2 className="text-white text-6xl font-bold -mb-6">АКО НЕ СИ РАЗБРАЛ</h2>
 
                     <div className="flex justify-center">
                         <Image
@@ -121,8 +121,8 @@ export default function DesktopVersion({ timeLeft }: DesktopVersionProps) {
                     </div>
                 </div>
 
-                <div className="text-center mb-8">
-                    <h3 className="text-white text-5xl font-bold mb-3">ДО ТЕГЛЕНИЕТО ОСТАВАТ:</h3>
+                <div className="text-center mb-8 mt-8">
+                    <h3 className="text-white text-4xl font-bold mb-6">ДО ТЕГЛЕНИЕТО ОСТАВАТ:</h3>
                     <div className="flex justify-center space-x-4">
                         <div className="flex flex-col items-center">
                             <div className="bg-black text-white px-6 py-4 rounded-lg text-4xl font-mono min-w-[80px] text-center">
