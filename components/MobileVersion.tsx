@@ -1,6 +1,11 @@
 import Image from "next/image";
+import { TimeLeft } from "@/utils/useCountdown";
 
-export default function MobileVersion() {
+interface MobileVersionProps {
+    timeLeft: TimeLeft;
+}
+
+export default function MobileVersion({ timeLeft }: MobileVersionProps) {
     return (
         <div
             className="block md:hidden min-h-screen w-full relative"
@@ -106,6 +111,36 @@ export default function MobileVersion() {
                                     className="cursor-pointer hover:scale-105 transition-transform"
                                 />
                             </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="text-center py-6">
+                    <h3 className="text-white text-2xl font-bold mb-4">ДО ТЕГЛЕНИЕТО ОСТАВАТ:</h3>
+                    <div className="grid grid-cols-2 gap-3 max-w-xs mx-auto">
+                        <div className="flex flex-col items-center">
+                            <div className="bg-black text-white px-4 py-3 rounded-lg text-2xl font-mono min-w-[60px] text-center">
+                                {timeLeft.days.toString().padStart(2, '0')}
+                            </div>
+                            <span className="text-white text-xs mt-1 font-medium">ДНИ</span>
+                        </div>
+                        <div className="flex flex-col items-center">
+                            <div className="bg-black text-white px-4 py-3 rounded-lg text-2xl font-mono min-w-[60px] text-center">
+                                {timeLeft.hours.toString().padStart(2, '0')}
+                            </div>
+                            <span className="text-white text-xs mt-1 font-medium">ЧАСА</span>
+                        </div>
+                        <div className="flex flex-col items-center">
+                            <div className="bg-black text-white px-4 py-3 rounded-lg text-2xl font-mono min-w-[60px] text-center">
+                                {timeLeft.minutes.toString().padStart(2, '0')}
+                            </div>
+                            <span className="text-white text-xs mt-1 font-medium">МИНУТИ</span>
+                        </div>
+                        <div className="flex flex-col items-center">
+                            <div className="bg-black text-white px-4 py-3 rounded-lg text-2xl font-mono min-w-[60px] text-center">
+                                {timeLeft.seconds.toString().padStart(2, '0')}
+                            </div>
+                            <span className="text-white text-xs mt-1 font-medium">СЕКУНДИ</span>
                         </div>
                     </div>
                 </div>

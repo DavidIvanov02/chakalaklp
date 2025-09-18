@@ -1,12 +1,8 @@
 import Image from "next/image";
+import { TimeLeft } from "@/utils/useCountdown";
 
 interface DesktopVersionProps {
-    timeLeft: {
-        days: number;
-        hours: number;
-        minutes: number;
-        seconds: number;
-    };
+    timeLeft: TimeLeft;
 }
 
 export default function DesktopVersion({ timeLeft }: DesktopVersionProps) {
