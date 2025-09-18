@@ -16,10 +16,7 @@ export default function DesktopVersion({ timeLeft }: DesktopVersionProps) {
             }}
         >
             <div className="max-w-7xl mx-auto px-10 py-3">
-
                 <div className="grid grid-cols-12 gap-4 items-center">
-
-                    {/* Left Side - Text Content */}
                     <div className="col-span-7">
                         <div className="text-left">
                             <div className="-ml-36">
@@ -38,7 +35,6 @@ export default function DesktopVersion({ timeLeft }: DesktopVersionProps) {
                             </div>
                         </div>
 
-                        {/* Steps */}
                         <div className="space-y-2">
                             <div className="flex items-start space-x-6 text-white">
                                 <Image
@@ -98,7 +94,6 @@ export default function DesktopVersion({ timeLeft }: DesktopVersionProps) {
                         </div>
                     </div>
 
-                    {/* Right Side - PlayStation Image */}
                     <div className="col-span-5 flex justify-center">
                         <div className="relative">
                             <Image
